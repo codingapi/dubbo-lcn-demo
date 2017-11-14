@@ -1,2 +1,1 @@
-
-transactionFilter=com.lorne.tx.dubbo.filter.TransactionFilter
+transactionFilter=com.codingapi.tx.dubbo.filter.TransactionFilter

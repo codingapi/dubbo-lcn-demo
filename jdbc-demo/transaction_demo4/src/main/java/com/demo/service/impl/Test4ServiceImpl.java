@@ -21,7 +21,7 @@ public class Test4ServiceImpl implements Test4Service {
     @Transactional
     public String test() {
 
-        String name = "hello_demo4";
+        String name = "jdbc_demo4";
 
         testDao.save(name);
 

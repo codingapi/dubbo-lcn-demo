@@ -1,6 +1,6 @@
 package com.demo.interceptor;
 
-import com.lorne.tx.dubbo.interceptor.TxManagerInterceptor;
+import com.codingapi.tx.dubbo.interceptor.TxManagerInterceptor;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

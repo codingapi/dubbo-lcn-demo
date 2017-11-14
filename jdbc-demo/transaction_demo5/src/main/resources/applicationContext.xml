@@ -25,7 +25,7 @@
 
 
     <context:component-scan base-package="com.demo.*"/>
-    <context:component-scan base-package="com.lorne.tx.*"/>
+    <context:component-scan base-package="com.codingapi.tx.*"/>
 
     <!-- Aspect -->
     <aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>

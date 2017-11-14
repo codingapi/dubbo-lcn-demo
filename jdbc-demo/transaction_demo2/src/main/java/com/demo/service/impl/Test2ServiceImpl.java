@@ -23,7 +23,7 @@ public class Test2ServiceImpl implements Test2Service {
     @Transactional
     public String test() {
 
-        String name = "hello_demo2";
+        String name = "jdbc_demo2";
 
         testDao.save(name);
 

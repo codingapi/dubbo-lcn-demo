@@ -29,7 +29,7 @@ public class Test3ServiceImpl implements Test3Service {
     @Transactional
     public String test() {
 
-        String name = "hello_demo3";
+        String name = "jdbc_demo3";
 
         testDao.save(name);
 //

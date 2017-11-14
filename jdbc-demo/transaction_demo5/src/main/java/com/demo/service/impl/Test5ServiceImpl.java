@@ -21,7 +21,7 @@ public class Test5ServiceImpl implements Test5Service {
     @Transactional
     public String test() {
 
-        String name = "hello_demo5";
+        String name = "jdbc_demo5";
 
         testDao.save(name);
 
