@@ -16,8 +16,8 @@ public class TestController {
     private TestService testService;
 
 
-    @RequestMapping("/index")
-    public String index(Model model){
+    @RequestMapping("/save")
+    public String save(Model model){
         model.addAttribute("info",testService.hello());
         return "index";
     }

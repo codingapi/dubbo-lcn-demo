@@ -63,16 +63,11 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>com.codingapi</groupId>
-            <artifactId>transaction-dubbo</artifactId>
-            <version>1.0.0</version>
-        </dependency>
 
         <dependency>
-            <groupId>com.codingapi</groupId>
-            <artifactId>tx-plugins-db</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.29</version>
         </dependency>
 
 
@@ -83,10 +78,29 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
-                    <artifactId>spring</artifactId>
+                    <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>com.codingapi</groupId>
+            <artifactId>transaction-dubbo</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.codingapi</groupId>
+            <artifactId>tx-plugins-db</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.codingapi</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
 
         <!-- mybatis核心包 -->
         <dependency>
@@ -108,6 +122,11 @@
         </dependency>
 
         <!-- spring 4 start-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
