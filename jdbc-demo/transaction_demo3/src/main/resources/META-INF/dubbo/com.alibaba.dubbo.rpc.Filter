@@ -1,0 +1,2 @@
+
+transactionFilter=com.lorne.tx.dubbo.filter.TransactionFilter

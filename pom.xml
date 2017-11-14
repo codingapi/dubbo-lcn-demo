@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.codingapi</groupId>
+    <artifactId>dubbo-lcn-demo</artifactId>
+    <version>4.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>dubbo-lcn-demo</name>
+
+    <modules>
+        <module>hibernate-demo/transaction_hibernate_demo1</module>
+        <module>hibernate-demo/transaction_hibernate_demo2</module>
+
+
+        <module>jdbc-demo/transaction_demo1</module>
+        <module>jdbc-demo/transaction_demo2</module>
+        <module>jdbc-demo/transaction_demo3</module>
+        <module>jdbc-demo/transaction_demo4</module>
+        <module>jdbc-demo/transaction_demo5</module>
+
+
+        <module>mybatis-demo/transaction_mybatis_demo1</module>
+        <module>mybatis-demo/transaction_mybatis_demo2</module>
+
+
+    </modules>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+</project>

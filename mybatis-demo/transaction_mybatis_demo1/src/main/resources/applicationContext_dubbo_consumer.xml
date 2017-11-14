@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
+>
+
+    <dubbo:application name="tx-transaction1"   />
+
+    <!--所有参与分布式事务的模块以及TxManager都必须要在同一个服务下-->
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+
+    <dubbo:consumer  filter="transactionFilter" />
+
+    <dubbo:provider delay="-1" timeout="6000" port="20881"  retries="0"/>
+
+    <dubbo:reference interface="com.demo.service.Test2Service" id="test2Service" />
+
+    <dubbo:protocol accesslog="true" name="dubbo"  host="127.0.0.1" />
+
+</beans>
