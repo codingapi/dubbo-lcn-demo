@@ -28,7 +28,7 @@ public class TestServiceImpl implements TestService {
     @Transactional
     public String hello() {
 
-        String name = "hello_demo1";
+        String name = "mybatis_demo1";
         Test test = new Test();
         test.setName(name);
         testDao.save(test);
@@ -36,7 +36,7 @@ public class TestServiceImpl implements TestService {
 
         String res =  test2Service.test();
 
-        //int v = 100/0;
+        int v = 100/0;
 
         return res;
     }

@@ -20,7 +20,7 @@ public class Test2ServiceImpl implements Test2Service {
     @Override
     @Transactional
     public String test() {
-        String name = "hello_demo2";
+        String name = "hibernate_demo2";
         Test test = new Test();
         test.setName(name);
         testDao.save(test);

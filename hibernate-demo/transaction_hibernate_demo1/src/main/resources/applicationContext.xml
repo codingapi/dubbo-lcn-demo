@@ -29,7 +29,7 @@
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
 
     <context:component-scan base-package="com.demo.*"/>
-    <context:component-scan base-package="com.lorne.tx.*"/>
+    <context:component-scan base-package="com.codingapi.tx.*"/>
 
 
     <!-- Aspect -->
