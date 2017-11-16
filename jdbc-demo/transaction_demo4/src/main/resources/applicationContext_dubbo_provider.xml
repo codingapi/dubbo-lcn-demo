@@ -9,7 +9,7 @@
 >
 
 
-    <dubbo:application name="tx-transaction4"   />
+    <dubbo:application name="jdbc_demo4"   />
 
 
     <dubbo:provider delay="-1" timeout="6000" port="20884"  retries="0"/>

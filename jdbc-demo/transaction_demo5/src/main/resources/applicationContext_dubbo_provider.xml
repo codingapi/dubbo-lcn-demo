@@ -8,7 +8,7 @@
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
 >
 
-    <dubbo:application name="tx-transaction5"   />
+    <dubbo:application name="jdbc_demo5"   />
 
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 
