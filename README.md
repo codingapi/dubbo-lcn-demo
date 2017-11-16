@@ -17,9 +17,9 @@ mybatis/hibernate 版本的demo只有两个模块，他们的调用关系图如�
 ![](readme/mybatis_demo.png)
 
 
-## 依赖的环境
+## 依赖的服务
 
-dubbo-lcn-demo 需要依赖的环境有：
+dubbo-lcn-demo 需要依赖的服务有：
 
 1. TxManager
 2. Mysql
@@ -240,8 +240,8 @@ transactionFilter=com.codingapi.tx.dubbo.filter.TransactionFilter
 
 http://localhost:port/projectName/save
 
-请求以后会出现 / by zero异常。这是由于在demo1的最后一句代码上写有int v = 100/0;
+请求以后会出现 / by zero异常。这是由于在demo1的最后一句代码上写有`int v = 100/0;`
 
 ![](readme/dubbo_demo.png) 
 
-此时观察数据你会发现没有任何数据，当把这句代码注释掉以后再执行时，将会看到两条数据。
+当把这句代码注释掉以后再执行时，此时观察数据你会发现没有任何数据在数据库下将会看到有两条数据。
