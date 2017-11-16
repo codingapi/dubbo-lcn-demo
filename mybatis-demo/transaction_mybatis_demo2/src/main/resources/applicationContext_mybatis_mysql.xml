@@ -59,6 +59,15 @@
     </bean>
 
 
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="lcnDataSourceProxy" />
+    </bean>
+
+
+    <tx:annotation-driven order="2" transaction-manager="transactionManager"/>
+
+
     <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="lcnDataSourceProxy" />
@@ -74,13 +83,6 @@
     </bean>
 
 
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="lcnDataSourceProxy" />
-    </bean>
-
-
-    <tx:annotation-driven order="2" transaction-manager="transactionManager"/>
 
 
 

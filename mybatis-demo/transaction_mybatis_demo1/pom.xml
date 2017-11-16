@@ -93,12 +93,6 @@
             <groupId>com.codingapi</groupId>
             <artifactId>tx-plugins-db</artifactId>
             <version>1.0.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.codingapi</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
 
