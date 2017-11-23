@@ -75,13 +75,13 @@
         <dependency>
             <groupId>com.codingapi</groupId>
             <artifactId>transaction-dubbo</artifactId>
-            <version>1.0.0</version>
+            <version>4.0.1</version>
         </dependency>
 
         <dependency>
             <groupId>com.codingapi</groupId>
             <artifactId>tx-plugins-db</artifactId>
-            <version>1.0.0</version>
+            <version>4.0.1</version>
         </dependency>
 
 
