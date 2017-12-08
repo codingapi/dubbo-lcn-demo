@@ -26,6 +26,9 @@
         <module>mybatis-demo/transaction_mybatis_demo2</module>
 
 
+        <module>dynamic-demo/dynamic-transaction_hibernate_demo1</module>
+        <module>dynamic-demo/dynamic-transaction_hibernate_demo2</module>
+
     </modules>
 
 
