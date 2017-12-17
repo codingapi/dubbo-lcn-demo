@@ -15,21 +15,15 @@
 
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <parent>
+        <groupId>com.codingapi</groupId>
+        <artifactId>dubbo-lcn-demo</artifactId>
+        <version>4.0.0</version>
+        <relativePath/>
+    </parent>
+
 
     <dependencies>
-
 
 
         <dependency>
@@ -58,17 +52,6 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>com.codingapi</groupId>
-            <artifactId>transaction-dubbo</artifactId>
-            <version>4.0.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.codingapi</groupId>
-            <artifactId>tx-plugins-db</artifactId>
-            <version>4.0.1</version>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>

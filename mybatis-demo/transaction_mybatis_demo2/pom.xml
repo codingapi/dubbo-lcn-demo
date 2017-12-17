@@ -16,6 +16,14 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <parent>
+        <groupId>com.codingapi</groupId>
+        <artifactId>dubbo-lcn-demo</artifactId>
+        <version>4.0.0</version>
+        <relativePath/>
+    </parent>
+
+
     <build>
         <plugins>
             <plugin>
@@ -67,18 +75,6 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>com.codingapi</groupId>
-            <artifactId>transaction-dubbo</artifactId>
-            <version>4.0.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.codingapi</groupId>
-            <artifactId>tx-plugins-db</artifactId>
-            <version>4.0.1</version>
         </dependency>
 
 

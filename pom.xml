@@ -5,7 +5,7 @@
 
     <groupId>com.codingapi</groupId>
     <artifactId>dubbo-lcn-demo</artifactId>
-    <version>4.0.1</version>
+    <version>4.0.0</version>
     <packaging>pom</packaging>
 
     <name>dubbo-lcn-demo</name>
@@ -49,6 +49,26 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+
+        <lcn.last.version>4.0.3.SNAPSHOT</lcn.last.version>
+
     </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.codingapi</groupId>
+            <artifactId>transaction-dubbo</artifactId>
+            <version>${lcn.last.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.codingapi</groupId>
+            <artifactId>tx-plugins-db</artifactId>
+            <version>${lcn.last.version}</version>
+        </dependency>
+
+
+    </dependencies>
 
 </project>
