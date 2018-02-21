@@ -10,7 +10,7 @@
 
     <dubbo:application name="jdbc_demo5"   />
 
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
 
     <dubbo:provider delay="-1" timeout="6000" port="20885"  retries="0"/>
 

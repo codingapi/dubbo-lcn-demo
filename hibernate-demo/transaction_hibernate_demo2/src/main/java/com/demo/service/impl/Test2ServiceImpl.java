@@ -1,5 +1,6 @@
 package com.demo.service.impl;
 
+import com.codingapi.tx.annotation.TxTransaction;
 import com.demo.dao.TestDao;
 import com.demo.entity.Test;
 import com.demo.service.Test2Service;
@@ -18,6 +19,7 @@ public class Test2ServiceImpl implements Test2Service {
     private TestDao testDao;
 
     @Override
+    @TxTransaction
     @Transactional
     public String test() {
         String name = "hibernate_demo2";

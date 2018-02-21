@@ -19,8 +19,7 @@
     <parent>
         <groupId>com.codingapi</groupId>
         <artifactId>dubbo-lcn-demo</artifactId>
-        <version>4.0.0</version>
-        <relativePath/>
+        <version>4.1.0</version>
     </parent>
 
     <dependencies>

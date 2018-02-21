@@ -83,6 +83,6 @@
 
 
 
-    <tx:annotation-driven order="2" transaction-manager="transactionManager"/>
+    <tx:annotation-driven />
 
 </beans>

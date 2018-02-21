@@ -27,7 +27,7 @@ public class TestServiceImpl implements TestService {
 
 
     @Override
-    @TxTransaction
+    @TxTransaction(isStart = true)
     @Transactional
     public String hello() {
 

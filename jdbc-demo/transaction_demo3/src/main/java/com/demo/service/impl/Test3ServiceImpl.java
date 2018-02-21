@@ -1,5 +1,6 @@
 package com.demo.service.impl;
 
+import com.codingapi.tx.annotation.TxTransaction;
 import com.demo.dao.TestDao;
 import com.demo.service.Test3Service;
 import com.demo.service.Test4Service;
@@ -27,6 +28,7 @@ public class Test3ServiceImpl implements Test3Service {
 
     @Override
     @Transactional
+    @TxTransaction
     public String test() {
 
         String name = "jdbc_demo3";
