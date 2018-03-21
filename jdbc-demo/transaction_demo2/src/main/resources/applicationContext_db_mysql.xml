@@ -51,15 +51,12 @@
         <!--<property name="connectionProperties" value="druid.stat.slowSqlMillis=10" />-->
     </bean>
 
-    <bean name="lcnDataSourceProxy" class="com.codingapi.tx.datasource.relational.LCNTransactionDataSource">
-        <property name="dataSource" ref="dataSource"/>
-        <property name="maxCount" value="20"/>
-    </bean>
+
 
     <bean id="jdbcTemplate"
           class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource">
-            <ref bean="lcnDataSourceProxy"/>
+            <ref bean="dataSource"/>
         </property>
     </bean>
 
@@ -86,9 +83,9 @@
 
     <!-- Transaction -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="lcnDataSourceProxy"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <tx:annotation-driven order="2" transaction-manager="transactionManager"/>
+    <tx:annotation-driven />
 
 </beans>

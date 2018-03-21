@@ -1,5 +1,6 @@
 package com.demo.service.impl;
 
+import com.codingapi.tx.annotation.TxTransaction;
 import com.demo.dao.TestDao;
 import com.demo.entity.Test;
 import com.demo.service.Test2Service;
@@ -20,6 +21,7 @@ public class Test2ServiceImpl implements Test2Service {
 
     @Override
     @Transactional
+    @TxTransaction
     public String test() {
 
         String name = "mybatis_demo2";

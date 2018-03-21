@@ -1,5 +1,6 @@
 package com.demo.service.impl;
 
+import com.codingapi.tx.annotation.TxTransaction;
 import com.demo.dao.TestDao;
 import com.demo.service.Test2Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class Test2ServiceImpl implements Test2Service {
 
     @Override
     @Transactional
+    @TxTransaction
     public String test() {
 
         String name = "jdbc_demo2";

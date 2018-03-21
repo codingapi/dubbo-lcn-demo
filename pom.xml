@@ -5,7 +5,7 @@
 
     <groupId>com.codingapi</groupId>
     <artifactId>dubbo-lcn-demo</artifactId>
-    <version>4.0.0</version>
+    <version>4.1.0</version>
     <packaging>pom</packaging>
 
     <name>dubbo-lcn-demo</name>
@@ -25,9 +25,6 @@
         <module>mybatis-demo/transaction_mybatis_demo1</module>
         <module>mybatis-demo/transaction_mybatis_demo2</module>
 
-
-        <module>dynamic-demo/dynamic-transaction_hibernate_demo1</module>
-        <module>dynamic-demo/dynamic-transaction_hibernate_demo2</module>
 
     </modules>
 
@@ -50,7 +47,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
 
-        <lcn.last.version>4.0.3.SNAPSHOT</lcn.last.version>
+        <lcn.last.version>4.1.0</lcn.last.version>
 
     </properties>
 

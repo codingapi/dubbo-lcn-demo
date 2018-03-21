@@ -24,6 +24,7 @@ public class MyBatisDemo2 {
         getLocalip();
         logger.info("开始启动asset");
 
+
         ClassPathXmlApplicationContext
                 context = new ClassPathXmlApplicationContext(
                 "classpath:applicationContext.xml");
@@ -37,5 +38,7 @@ public class MyBatisDemo2 {
                 }
             }
         }
+
+
     }
 }
